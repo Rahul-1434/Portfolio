@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- navibar section-->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white" id="portfolio">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#projects" class="t-white roboto">Projects <i class="fa-solid fa-project-diagram"></i></a></li>
+                <li><a href="#contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- home section -->
+        <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppins">Hi ,i'm</h6>
+                <h1 class="t-white">C Rahul Reddy</h1>
+                <h4 class="poppins">Software Engineer</h4>
+                <a href="{% static 'pdf/resume.pdf'%}" target="_blank">
+                    <button class="btn poppins">Resume</button>
+                </a>
+                <a href="#contact" class="btn live poppins" id="hireme" >let's talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <img src="{% static 'images/photo.jpg' %}" alt="photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+     <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'images/about.png' %}" alt="about image" style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Rahul Reddy</h1>
+                    <p class="t-white poppins">My name is C Rahul Reddy.I’m a B.tech student Mother Theresa Institute Of Engineering & Technology College in Computer Science & Engineering.     
+                       <br> I am fresher, I’m passionate about creating quality products that meet all of the customer’s needs, and I love learning new techniques and technologies that allow me to make that happen.While I generally enjoy all of my job, the part I find most draining is estimating projects for customers. I don’t mind doing it, but I enjoy actually creating the software much more.
+                    </p>
+                    <a href="#contact" class="btn" id="hireme">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section-->
+     <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+            <div class="skills-left flex s-center items-center">
+                <img src="{% static 'images/skills.jpg' %}" alt="skills image">
+            </div>
+        
+
+            <div class="skills-right flex items-center">
+                <div class="skillss-container">
+                    <div class="python bar p-relative">
+                        <span class="bar-content left t-white">Python</span>
+                        <span class="bar-content right-skills t-white">90%</span>
+                    </div>
+                    <div class="html bar p-relative">
+                        <span class="bar-content left t-white">html</span>
+                        <span class="bar-content right-skills t-white">90%</span>
+                    </div>
+                    <div class="css bar p-relative">
+                        <span class="bar-content left t-white">css</span>
+                        <span class="bar-content right-skills t-white">80%</span>
+                    </div>
+                    <div class="js bar p-relative">
+                        <span class="bar-content left t-white">javascript</span>
+                        <span class="bar-content right-skills t-white">55%</span>
+                    </div>
+                    <div class="php bar p-relative">
+                        <span class="bar-content left t-white">PhP</span>
+                        <span class="bar-content right-skills t-white">70%</span>
+                    </div>
+                    <div class="sql bar p-relative">
+                        <span class="bar-content left t-white">MySQL</span>
+                        <span class="bar-content right-skills t-white">65%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section -->
+    <section id="projects">
+        <h1 class="t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppinss">Voting System</h1>
+                <p class="t-white poppinss">A web-based voting system developed using PHP and HTML, featuring user authentication, voting functionality, and vote tallying with database integration.</p>
+                <div class="button flex s-around">
+                    <a href="https://github.com/Rahul-1434/project.git" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppinss">Python Mini Projects</h1>
+                <p class="t-white poppinss">A collection of beginner-friendly Python applications, including games like Tic Tac Toe and Rock-Paper-Scissors, as well as utility programs like a coffee machine simulator and a bank account manager.</p>
+                <div class="button flex s-around">
+                    <a href="https://github.com/Rahul-1434/Python-projects.git" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppinss">Django Projects</h1>
+                <p class="t-white poppinss">A collection of web applications developed using Django, showcasing proficiency in backend development, database integration, and dynamic web functionalities.</p>
+                <div class="button flex s-around">
+                    <a href="https://github.com/Rahul-1434/django-projects.git" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppinss">Portfolio</h1>
+                <p class="t-white poppinss">A personal portfolio website built using Django to showcase my skills, projects, and achievements with a clean and responsive design. It includes sections for my resume, projects, skills, and contact information.</p>
+                <div class="button flex s-around">
+                    <a href="https://github.com/Rahul-1434/Portfolio.git" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact me section -->
+    <section id="contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="from" id="contactForm" >
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="popinss" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="email form-div">
+                        <input type="email" name="email" id="email" class="popinss" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="popinss" placeholder="Enter your Phone" required>
+                    </div>
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="popinss" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn popinss" id="submit">send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+     <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About Me</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#contact" class="poppinss">Contact</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="https://www.linkedin.com/in/c-rahul-reddy-68150332b/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/Rahul-1434" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://leetcode.com/u/i_L0ve_Coding" target="_blank">
+                <li><i class="fa-brands fa-leetcode"><img src="{% static 'images/leetcode.png' %}" alt="LeetCode" style="width: 15px; height: 15px;"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 poppinss">Designed by Rahul Reddy. &copy; All Rights Reserved </p>
+     </footer>
+</body>
+</html>
